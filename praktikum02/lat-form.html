@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan Form</title>
+</head>
+<body>
+    <form>
+
+        <p>Masukan Nama Anda : 
+            <input type="text" name="nama" required>
+        </p>
+        <P>Masukan Password Anda : 
+            <input type="password" name="pass" required>
+        </P>
+        <input type="hidden" name="status" value="member">
+        <p>Email Anda :
+            <input type="email" name="emailku" required>
+        </p>
+        <p>Pilih Warna Favorit :
+            <input type="color" name="favcolor">
+        </p>
+        <p>Tanggal Lahir : 
+            <input type="date" name="tgllahir">
+        </p>
+        <p>Pilih angka 1-10 :
+            <input type="range" name="nila" min="1" max="10">
+        </p>
+        <p>Nilai UAS :
+            <input type="number" name="nilai_uas">
+        </p>
+        <p>Upload foto : 
+            <input type="file" name="photo">
+        </p>
+
+        <!-- checkbox & radio button -->
+        <p>Pilih menu : <br>
+            <input type="checkbox" name="menu1" value="y"> Ayam Geprek<br>
+            <input type="checkbox" name="menu2" value="y"> Gado-Gado<br>
+            <input type="checkbox" name="menu3" value="y"> Nasi Uduk<br>
+            <input type="checkbox" name="menu4" value="y"> Ayam Bakar<br>
+        </p>
+
+        <p>Gender : <br>
+            <input type="radio" name="JK" value="L">Laki-Laki<br>
+            <input type="radio" name="JK" value="P">Perempuan<br>
+        </p>
+        <p>Pilih Matku : <br>
+            <select name="matkul">
+                <option value="bd2">Basis Data 2</option>
+                <option value="web">Pemrograman Web</option>
+                <option value="sda">Struktur Data & Algotitma</option>
+            </select>
+        </p>
+        <p>Catatan : 
+            <textarea name="catatan" rows="5" cols="50"> </textarea>
+        </p>
+
+
+
+        <input type="submit" value="Kirim">
+        <input type="reset" value="batal">
+        
+    </form>
+</body>
+</html>
